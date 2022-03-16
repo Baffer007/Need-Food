@@ -92,6 +92,7 @@ class _LoginPageState extends State<LoginPage> {
                         child: TextFormField(
                           validator: (value) {
                             if (value!.isEmpty) return "Bu maydon to'ldiring!";
+
                           },
                           textInputAction: TextInputAction.next,
                           decoration: const InputDecoration(
@@ -167,6 +168,7 @@ class _LoginPageState extends State<LoginPage> {
                           if (isValid) {
                             formKey.currentState!.save();
                           }
+                          if(isValid)
                           Navigator.push(
                             context,
                             MaterialPageRoute(
